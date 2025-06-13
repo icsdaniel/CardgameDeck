@@ -1,0 +1,126 @@
+LINK = "81curios.csv"
+
+[81_color]=#3B9C9C
+[0_color]=#D9A441
+[^_color]=#893B43
+[v_color]=#5A7152
+[std_color]=#2D2D2D
+[points_color]=#C46C28
+[set_color]=#D8CBC7
+
+[deck_size]=1-79
+[extra_deck]=82-111
+
+IF=[Set]=A
+POLYGON=,4%,-4%,45%,45%,3,0,[set_color]
+ELSEIF=[Set]=B
+POLYGON=,4%,-4%,45%,45%,4,0,[set_color]
+ELSEIF=[Set]=D
+POLYGON=,4%,-4%,45%,45%,4,45,[set_color]
+ELSEIF=[Set]=C
+POLYGON=,4%,-4%,45%,45%,5,0,[set_color]
+ELSEIF=[Set]=x
+STAR=,4%,-4%,45%,45%,5,0,50,[set_color]
+ELSEIF=[Set]=E
+CIRCLE=,4%,-4%,45%,45%,[set_color]
+ENDIF
+
+
+FONT=Arial,36,T,#000000
+IF=[Card type]=">"
+rectangle=[deck_size],0,0,100%,100%,[81_color],empty,0.6
+TEXT=[deck_size],[Effect],32%,69%,60%,30%,CENTER,CENTER
+LINE = [deck_size],5,8,5,7,#000000,0.1,,0.3
+ELSEIF=[Card type]=o
+rectangle=,0,0,100%,100%,[0_color],empty,0.6
+TEXT=,"symbs",22%,69%,60%,30%,CENTER,CENTER
+LINE = ,5,8,5,7,#000000,0.1,,0.3
+ELSEIF=[Card type]=^^
+rectangle=,0,0,100%,100%,[^_color],empty,0.6
+LINE = ,5,8,5,7,#000000,0.1,,0.3
+LINE = ,4,8,4,7,#000000,0.1,,0.3
+ELSEIF=[Card type]=2nd
+rectangle=,0,0,100%,100%,[std_color],empty,0.6
+TEXT=[deck_size],"2nd",32%,69%,60%,30%,CENTER,CENTER
+LINE = [deck_size],5,8,5,7,#000000,0.1,,0.3
+ELSEIF=[Card type]=^v
+rectangle=,0,0,100%,100%,[v_color],empty,0.6
+LINE = ,5,8,5,7,#000000,0.1,,0.3
+LINE = ,4,8,4,7,#000000,0.1,,,0.3
+ELSEIF=[Card type]=playable
+rectangle=,10%,10%,80%,80%,#000000,empty,0.2
+ELSE
+
+LINE = [deck_size],4.5,8,4.5,7,#000000,0.1,,0.3
+ENDIF
+;IMAGE=,"\[BottomRightImage]",{5867/200}%,{3203/150}%,40%,20%
+
+
+IF=[toDraw]=1
+IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
+ENDIF
+IF=[toDraw]=2
+IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
+IMAGE = ,"cardRetro.png", 14%, 35%, 25%, 15%, 3
+ENDIF
+IF=[toDraw]=3
+IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
+IMAGE=,cardRetro.png,14%,35%,25%,15%,3
+IMAGE = ,"cardRetro.png", 18%, 35%, 25%, 15%, 5
+ENDIF
+
+VISUAL=, 10, 10
+;Font(size)
+FONT=Impact,40,TBU,[points_color]
+;Text(size)
+TEXT=[deck_size],[Points],10%,9%,20%,20%
+;Font(size)
+FONT=Impact,40,T,#000000
+;Text(size)
+TEXT=[deck_size],[units],23.25%,9%,20%,20%
+
+ENDVISUAL
+
+;a triangle
+;b rombo
+;c pentagon
+;d square
+;e hex
+
+;star
+STAR=81-82,30%,30%,40%,40%,5,0,50,[set_color]
+;abc
+POLYGON=83,8%,8%,40%,40%,3,0,[set_color]
+POLYGON=83,30%,30%,40%,40%,4,0,[set_color]
+POLYGON=83,52%,52%,40%,40%,5,0,[set_color]
+;bcd
+POLYGON=84,8%,8%,40%,40%,4,0,[set_color]
+POLYGON=84,30%,30%,40%,40%,5,0,[set_color]
+POLYGON=84,52%,52%,40%,40%,4,45,[set_color]
+;cde
+POLYGON=85,8%,8%,40%,40%,5,0,[set_color]
+POLYGON=85,30%,30%,40%,40%,4,45,[set_color]
+POLYGON=85,52%,52%,40%,40%,4,0,[set_color]
+;dea
+POLYGON=86,8%,8%,40%,40%,4,45,[set_color]
+POLYGON=86,30%,30%,40%,40%,6,0,[set_color]
+POLYGON=86,52%,52%,40%,40%,3,0,[set_color]
+;eab
+POLYGON=87,8%,8%,40%,40%,6,0,[set_color]
+POLYGON=87,30%,30%,40%,40%,3,0,[set_color]
+POLYGON=87,52%,52%,40%,40%,4,0,[set_color]
+
+
+FONT=Arial,20,,#000000
+;Text(size)
+TEXT=88-111,[Effect],0%,{6999/200}%,100%,45%,CENTER,WWCENTER
+;Text(size)
+;TEXT=81,"81, the end",0%,{6999/200}%,100%,30%,CENTER,WWCENTER
+FONT=Arial,20,T,#000000
+TEXT=81-111,[Units],0%,10%,100%,17%
+
+rectangle=80,0,0,100%,100%,[81_color],empty,2
+FONT=Arial,30,T,[81_color]
+;Text(size)
+
+TEXT=80,"80",0%,{6999/200}%,100%,30%,CENTER,WWCENTER
