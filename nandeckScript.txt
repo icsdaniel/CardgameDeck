@@ -9,7 +9,7 @@ LINK = "81curios.csv"
 [set_color]=#D8CBC7
 
 [deck_size]=1-79
-[extra_deck]=82-111
+[extra_deck]=82-117
 
 IF=[Set]=A
 POLYGON=,4%,-4%,45%,45%,3,0,[set_color]
@@ -113,11 +113,11 @@ POLYGON=87,52%,52%,40%,40%,4,0,[set_color]
 
 FONT=Arial,20,,#000000
 ;Text(size)
-TEXT=88-111,[Effect],0%,{6999/200}%,100%,45%,CENTER,WWCENTER
+TEXT=88-117,[Effect],0%,{6999/200}%,100%,45%,CENTER,WWCENTER
 ;Text(size)
 ;TEXT=81,"81, the end",0%,{6999/200}%,100%,30%,CENTER,WWCENTER
 FONT=Arial,20,T,#000000
-TEXT=81-111,[Units],0%,10%,100%,17%
+TEXT=81-117,[Units],0%,10%,100%,17%
 
 rectangle=80,0,0,100%,100%,[81_color],empty,2
 FONT=Arial,30,T,[81_color]
