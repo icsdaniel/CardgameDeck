@@ -20,7 +20,7 @@ POLYGON=,4%,-4%,45%,45%,4,45,[set_color]
 ELSEIF=[Set]=C
 POLYGON=,4%,-4%,45%,45%,5,0,[set_color]
 ELSEIF=[Set]=x
-STAR=,4%,-4%,45%,45%,5,0,50,[set_color]
+STAR=,4%,-4%,45%,45%,5,0,50,#3B9C9C#D9A441#893B43#2D2D2D@360
 ELSEIF=[Set]=E
 CIRCLE=,4%,-4%,45%,45%,[set_color]
 ENDIF
@@ -88,7 +88,8 @@ ENDVISUAL
 ;e hex
 
 ;star
-STAR=81-82,30%,30%,40%,40%,5,0,50,[set_color]
+STAR=81-82,30%,30%,40%,40%,5,0,50,#3B9C9C#D9A441#893B43#2D2D2D@360
+;CIRCLE=,-0.5%,0%,20%,20%,#000000,#0000FF#807532#3D2B1F#FF0000@0
 ;abc
 POLYGON=83,8%,8%,40%,40%,3,0,[set_color]
 POLYGON=83,30%,30%,40%,40%,4,0,[set_color]
@@ -110,14 +111,19 @@ POLYGON=87,8%,8%,40%,40%,6,0,[set_color]
 POLYGON=87,30%,30%,40%,40%,3,0,[set_color]
 POLYGON=87,52%,52%,40%,40%,4,0,[set_color]
 
-
-FONT=Arial,20,,#000000
+FONT=Arial,20,,[std_color]
 ;Text(size)
-TEXT=88-117,[Effect],0%,{6999/200}%,100%,45%,CENTER,WWCENTER
+TEXT=88-96,[Effect],20%,35%,60%,45%,CENTER,WWCENTER
+FONT=Arial,20,,[81_color]
+;Text(size)
+TEXT=96-107,[Effect],20%,35%,60%,45%,CENTER,WWCENTER
+FONT=Arial,20,,[^_color]
+;Text(size)
+TEXT=108-119,[Effect],20%,35%,60%,45%,CENTER,WWCENTER
 ;Text(size)
 ;TEXT=81,"81, the end",0%,{6999/200}%,100%,30%,CENTER,WWCENTER
 FONT=Arial,20,T,#000000
-TEXT=81-117,[Units],0%,10%,100%,17%
+TEXT=81-119,[Units],0%,10%,100%,17%,CENTER,WWCENTER
 
 rectangle=80,0,0,100%,100%,[81_color],empty,2
 FONT=Arial,30,T,[81_color]
