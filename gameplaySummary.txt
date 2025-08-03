@@ -1,0 +1,19 @@
+1. Draft & Plan
+• Players take turns drafting one numbered card (1–79) from a shared row. One card remains as the “rule card”.
+
+2. Secret Selection
+• With four cards in hand, everyone secretly picks one to contest the round.
+
+3. Reveal & Resolve
+• All chosen cards flip simultaneously. The leftover central card’s icon dictates which cards get discarded (most often: the highest‑value cards, including that center rule card!).
+• Surviving cards become “scored” and rack up points; discarded cards are gone for good.
+
+4. Draw, Refill & Repeat
+• Discard excess, then refill the central row back to normal.
+• Pass the first‑player marker and start the next round.
+
+5. Final round
+• When the hidden “80” End Card finally appears in the center, everyone gets one last draft + reveal.
+
+This is the core of the game, balanced by the central card value pivoting players decisions and the will to push their luck.
+Additionally, there's secret modifiers, extra points and set collection elements. 
