@@ -1,0 +1,20 @@
+[main]
+kind_var=TILE
+name_var=Variant §
+front_asset=
+front_range=
+front_offset=0
+back_asset=
+back_range=
+back_offset=0
+kind_anc=POINT
+name_anc=Anchor §
+cap_anc=null
+rot_anc=null
+con_anc=null
+til_anc=null
+frames_anc=
+cont_w=1000
+cont_h=1000
+off_x=0
+off_y=0

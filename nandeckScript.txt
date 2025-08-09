@@ -20,7 +20,7 @@ POLYGON=,4%,-4%,45%,45%,4,45,[set_color]
 ELSEIF=[Set]=C
 POLYGON=,4%,-4%,45%,45%,5,0,[set_color]
 ELSEIF=[Set]=x
-STAR=,4%,-4%,45%,45%,5,0,50,#3B9C9C#D9A441#893B43#2D2D2D@360
+STAR=,4%,-4%,45%,45%,5,0,50,#3B9C9C#7FFFD4@360
 ELSEIF=[Set]=E
 CIRCLE=,4%,-4%,45%,45%,[set_color]
 ENDIF
@@ -88,7 +88,7 @@ ENDVISUAL
 ;e hex
 
 ;star
-STAR=81-82,30%,30%,40%,40%,5,0,50,#3B9C9C#D9A441#893B43#2D2D2D@360
+STAR=81-82,30%,30%,40%,40%,5,0,50,#3B9C9C#7FFFD4@360
 ;CIRCLE=,-0.5%,0%,20%,20%,#000000,#0000FF#807532#3D2B1F#FF0000@0
 ;abc
 POLYGON=83,8%,8%,40%,40%,3,0,[set_color]
@@ -130,3 +130,13 @@ FONT=Arial,30,T,[81_color]
 ;Text(size)
 
 TEXT=80,"80",0%,{6999/200}%,100%,30%,CENTER,WWCENTER
+
+DISPLAY ="white_deck1.png", 0,10
+DISPLAY ="white_deck2.png", 11,20
+DISPLAY ="white_deck3.png", 21,30
+DISPLAY ="white_deck4.png", 31,40
+DISPLAY ="white_deck5.png", 41,50
+DISPLAY ="white_deck6.png", 51,60
+DISPLAY ="white_deck7.png", 61,70
+DISPLAY ="white_deck8.png", 71,80
+
