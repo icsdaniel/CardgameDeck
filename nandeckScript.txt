@@ -126,10 +126,13 @@ FONT=Arial,20,T,#000000
 TEXT=81-119,[Units],0%,10%,100%,17%,CENTER,WWCENTER
 
 rectangle=80,0,0,100%,100%,[81_color],empty,2
+LINE = 80,4,7.8,4,6.8,#000000,0.1,,0.3
+TEXT=80,">80",22%,69%,60%,30%,CENTER,CENTER
 FONT=Arial,30,T,[81_color]
 ;Text(size)
 
 TEXT=80,"80",0%,{6999/200}%,100%,30%,CENTER,WWCENTER
+
 
 DISPLAY ="white_deck1.png", 0,10
 DISPLAY ="white_deck2.png", 11,20
