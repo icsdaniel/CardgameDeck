@@ -1,0 +1,83 @@
+LINK = "HumbleSmuggle.csv"
+
+[points_color]=#C46C28
+[set_color]=#D8CBC7
+
+[deck_size]=1-84
+
+IF=[Set]=A
+POLYGON=,4%,-4%,45%,45%,3,0,[set_color]
+ELSEIF=[Set]=B
+POLYGON=,4%,-4%,45%,45%,4,0,[set_color]
+ELSEIF=[Set]=D
+POLYGON=,4%,-4%,45%,45%,4,45,[set_color]
+ELSEIF=[Set]=C
+POLYGON=,4%,-4%,45%,45%,5,0,[set_color]
+ELSEIF=[Set]=x
+STAR=,4%,-4%,45%,45%,5,0,50,[set_color]
+ELSEIF=[Set]=E
+CIRCLE=,4%,-4%,45%,45%,[set_color]
+ENDIF
+
+
+STAR=74-79,50%,-4%,45%,45%,8,0,50,[set_color]
+
+FONT=Arial,36,T,#000000
+
+TEXT=[deck_size],[Type],32%,69%,60%,30%,CENTER,CENTER
+
+
+IF=[toDraw]=1
+IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
+ENDIF
+IF=[toDraw]=2
+IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
+IMAGE = ,"cardRetro.png", 14%, 35%, 25%, 15%, 3
+ENDIF
+IF=[toDraw]=3
+IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
+IMAGE = ,"cardRetro.png",14%,35%,25%,15%,3
+IMAGE = ,"cardRetro.png", 18%, 35%, 25%, 15%, 5
+ENDIF
+
+VISUAL=, 10, 10
+;Font(size)
+FONT=Impact,40,TBU,[points_color]
+;Text(size)
+TEXT=[deck_size],[Points],10%,9%,20%,20%
+;Font(size)
+FONT=Impact,40,T,#000000
+;Text(size)
+TEXT=[deck_size],[units],23.25%,9%,20%,20%
+
+ENDVISUAL
+
+;a triangle
+;b rombo
+;c pentagon
+;d square
+;e circle
+
+;star
+;STAR=81-82,30%,30%,40%,40%,5,0,50,[set_color]
+;abc
+;POLYGON=83,8%,8%,40%,40%,3,0,[set_color]
+;POLYGON=83,30%,30%,40%,40%,4,0,[set_color]
+;POLYGON=83,52%,52%,40%,40%,5,0,[set_color]
+;bcd
+;POLYGON=84,8%,8%,40%,40%,4,0,[set_color]
+;POLYGON=84,30%,30%,40%,40%,5,0,[set_color]
+;POLYGON=84,52%,52%,40%,40%,4,45,[set_color]
+;cde
+;POLYGON=85,8%,8%,40%,40%,5,0,[set_color]
+;POLYGON=85,30%,30%,40%,40%,4,45,[set_color]
+;CIRCLE=85,52%,52%,40%,40%,[set_color]
+;dea
+;POLYGON=86,8%,8%,40%,40%,4,45,[set_color]
+;CIRCLE=86,30%,30%,40%,40%,[set_color]
+;POLYGON=86,52%,52%,40%,40%,3,0,[set_color]
+;eab
+;CIRCLE=87,8%,8%,40%,40%,[set_color]
+;POLYGON=87,30%,30%,40%,40%,3,0,[set_color]
+;POLYGON=87,52%,52%,40%,40%,4,0,[set_color]
+
