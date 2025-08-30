@@ -5,20 +5,22 @@ LINK = "HumbleSmuggleExtraDeck.csv"
 
 [deck_size]=1-40
 
-IF=[S1]=A
-POLYGON=,5%,10%,30%,30%,3,0,[set_color]
-ELSEIF=[S1]=B
-POLYGON=,5%,10%,30%,30%,4,0,[set_color]
-ELSEIF=[S1]=D
-POLYGON=,5%,10%,30%,30%,4,45,[set_color]
-ELSEIF=[S1]=C
-POLYGON=,5%,10%,30%,30%,5,0,[set_color]
-ELSEIF=[S1]=x
-STAR=,5%,10%,30%,30%,5,0,50,[set_color]
-ELSEIF=[S1]=E
-CIRCLE=,5%,10%,30%,30%,[set_color]
-ENDIF
-
+;IF=[S1]=A
+;POLYGON=,5%,10%,30%,30%,3,0,[set_color]
+;ELSEIF=[S1]=B
+;POLYGON=,5%,10%,30%,30%,4,0,[set_color]
+;ELSEIF=[S1]=D
+;POLYGON=,5%,10%,30%,30%,4,45,[set_color]
+;ELSEIF=[S1]=C
+;POLYGON=,5%,10%,30%,30%,5,0,[set_color]
+;ELSEIF=[S1]=x
+;STAR=,5%,10%,30%,30%,5,0,50,[set_color]
+;ELSEIF=[S1]=E
+;CIRCLE=,5%,10%,30%,30%,[set_color]
+;ENDIF
+IMAGE = ,[S1], 5%, 75%, 2, 2, 0
+IMAGE = ,[S2], 35%, 75%, 2, 2, 0
+IMAGE = ,[S3], 65%, 75%, 2, 2, 0
 
 IF=[S2]=A
 POLYGON=,35%,10%,30%,30%,3,0,[set_color]
@@ -50,10 +52,13 @@ ENDIF
 
 LINE=,0%,50%,100%,50%,#000000, 0.15
 
+
+FONT=Impact,40,T,#000000
+TEXT=[deck_size],[Modifier],0%,0%,60%,30%,CENTER,CENTER
+
 FONT=Arial,36,T,#000000
-TEXT=[deck_size],[Modifier],32%,69%,60%,30%,CENTER,CENTER
-TEXT=26-40,[HoldPoints],0%,9%,100%,30%,CENTER,CENTER
+TEXT=26-40,[HoldPoints],0%,72%,100%,30%,CENTER,CENTER
 
 FONT=Arial,26,T,#000000
-TEXT=[deck_size],"If you hold it",0%,40%,100%,10%,CENTER,CENTER
-TEXT=[deck_size],"If you play it",0%,50%,100%,10%,CENTER,CENTER
+TEXT=[deck_size],"If you play it",0%,40%,100%,10%,CENTER,CENTER
+TEXT=[deck_size],"If you hold it",0%,50%,100%,10%,CENTER,CENTER

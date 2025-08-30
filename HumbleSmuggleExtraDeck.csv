@@ -1,28 +1,28 @@
 Value,Points,Units,Set,Type,ToDraw,,,,S1,S2,S3,HoldPoints,Modifier
-1,,1,x,^,,,Hold to score,,x,,,x,+20
-2,,2,x,^,,,Hold to score,,x,,,x,-20
-3,,3,x,^,,,Hold to score,,x,,,x,+20
-4,,4,x,^,,,Hold to score,,x,,,x,-20
-5,,5,A,^,2,,Hold to score,,A,B,C,ABC,+15
-6,,6,B,^,2,,Hold to score,,A,B,D,ABD,-15
-7,,7,C,^,2,,Hold to score,,A,B,E,ABE,+15
-8,,8,D,^,2,,Hold to score,,A,C,D,ACD,-15
-9,,9,E,>60,2,,Hold to score,,A,C,E,ACE,+15
-10,1,0,,^v,,,Hold to score,,A,D,E,ADE,-15
-11,1,1,,^^,,,Hold to score,,B,C,D,BCD,+15
-12,1,2,,^v,1,,Hold to score,,B,C,E,BCE,-15
-13,1,3,,^^,1,,Hold to score,,B,D,E,BDE,+15
-14,1,4,,^,3,,Hold to score,,C,D,E,CDE,-15
-15,1,5,B,^,1,,Hold to score,,A,B,,AB,+10
-16,1,6,C,^,1,,Place on any covered card,,A,C,,AC,-10
-17,1,7,D,^,2,,Place on any covered card,,A,D,,AD,+10
-18,1,8,E,^,2,,Place on any covered card,,A,E,,AE,-10
-19,1,9,A,>60,2,,Place on any covered card,,B,C,,BC,+10
-20,2,0,,^v,,,Place on any covered card,,B,D,,BD,-10
-21,2,1,,^^,,,Place on any covered card,,B,E,,BE,+10
-22,2,2,,^v,1,,Place on any covered card,,C,D,,CD,-10
-23,2,3,,^^,1,,Place on any covered card,,C,E,,CE,+10
-24,2,4,,^,3,,Place on any covered card,,D,E,,DE,-10
+1,,1,x,^,,,Hold to score,,star.png,,,x,+20
+2,,2,x,^,,,Hold to score,,star.png,,,x,-20
+3,,3,x,^,,,Hold to score,,star.png,,,x,+20
+4,,4,x,^,,,Hold to score,,star.png,,,x,-20
+5,,5,A,^,2,,Hold to score,,circle.png,square.png,triangle.png,ABC,+15
+6,,6,B,^,2,,Hold to score,,circle.png,square.png,rhombus.png,ABD,-15
+7,,7,C,^,2,,Hold to score,,circle.png,square.png,pentagon.png,ABE,+15
+8,,8,D,^,2,,Hold to score,,circle.png,triangle.png,rhombus.png,ACD,-15
+9,,9,E,>60,2,,Hold to score,,circle.png,triangle.png,pentagon.png,ACE,+15
+10,1,0,,^v,,,Hold to score,,circle.png,rhombus.png,pentagon.png,ADE,-15
+11,1,1,,^^,,,Hold to score,,square.png,triangle.png,rhombus.png,BCD,+15
+12,1,2,,^v,1,,Hold to score,,square.png,triangle.png,pentagon.png,BCE,-15
+13,1,3,,^^,1,,Hold to score,,square.png,rhombus.png,pentagon.png,BDE,+15
+14,1,4,,^,3,,Hold to score,,triangle.png,rhombus.png,pentagon.png,CDE,-15
+15,1,5,B,^,1,,Hold to score,,circle.png,square.png,,AB,+10
+16,1,6,C,^,1,,Place on any covered card,,circle.png,triangle.png,,AC,-10
+17,1,7,D,^,2,,Place on any covered card,,circle.png,rhombus.png,,AD,+10
+18,1,8,E,^,2,,Place on any covered card,,circle.png,pentagon.png,,AE,-10
+19,1,9,A,>60,2,,Place on any covered card,,square.png,triangle.png,,BC,+10
+20,2,0,,^v,,,Place on any covered card,,square.png,rhombus.png,,BD,-10
+21,2,1,,^^,,,Place on any covered card,,square.png,pentagon.png,,BE,+10
+22,2,2,,^v,1,,Place on any covered card,,triangle.png,rhombus.png,,CD,-10
+23,2,3,,^^,1,,Place on any covered card,,triangle.png,pentagon.png,,CE,+10
+24,2,4,,^,3,,Place on any covered card,,rhombus.png,pentagon.png,,DE,-10
 25,2,5,C,^,1,,Place on any covered card,,,,,2 POINTS,+10
 26,2,6,D,^,1,,Place on any covered card,,,,,2 POINTS,-10
 27,2,7,E,^,2,,Place on any covered card,,,,,2 POINTS,+10

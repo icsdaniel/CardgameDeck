@@ -6,17 +6,18 @@ LINK = "HumbleSmuggle.csv"
 [deck_size]=1-84
 
 IF=[Set]=A
-POLYGON=,4%,-4%,45%,45%,3,0,[set_color]
+;POLYGON=,4%,-4%,45%,45%,3,0,[set_color]
+IMAGE = ,"circle.png", 34%, 5%, 2, 2, 0
 ELSEIF=[Set]=B
-POLYGON=,4%,-4%,45%,45%,4,0,[set_color]
-ELSEIF=[Set]=D
-POLYGON=,4%,-4%,45%,45%,4,45,[set_color]
+IMAGE = ,"square.png", 34%, 5%, 2, 2, 0
 ELSEIF=[Set]=C
-POLYGON=,4%,-4%,45%,45%,5,0,[set_color]
+IMAGE = ,"triangle.png", 34%, 5%, 2, 2, 0
+ELSEIF=[Set]=D
+IMAGE = ,"rhombus.png", 34%, 5%, 2, 2, 0
 ELSEIF=[Set]=x
-STAR=,4%,-4%,45%,45%,5,0,50,[set_color]
+IMAGE = ,"pentagon.png", 34%, 5%, 2, 2, 0
 ELSEIF=[Set]=E
-CIRCLE=,4%,-4%,45%,45%,[set_color]
+IMAGE = ,"star.png", 34%, 5%, 2, 2, 0
 ENDIF
 
 
@@ -24,31 +25,31 @@ STAR=74-79,50%,-4%,45%,45%,8,0,50,[set_color]
 
 FONT=Arial,36,T,#000000
 
-TEXT=[deck_size],[Type],32%,69%,60%,30%,CENTER,CENTER
-
+;TEXT=[deck_size],[Type],32%,69%,60%,30%,CENTER,CENTER
+IMAGE = ,[Type], 58%, 73%, 2, 2, 0
 
 IF=[toDraw]=1
-IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
+IMAGE = ,"cardRetro.png", 65%, 8.2%, 25%, 15%, 0
 ENDIF
 IF=[toDraw]=2
-IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
-IMAGE = ,"cardRetro.png", 14%, 35%, 25%, 15%, 3
+IMAGE = ,"cardRetro.png", 65%, 8.2%, 25%, 15%, 0
+IMAGE = ,"cardRetro.png", 69%, 8.2%, 25%, 15%, 3
 ENDIF
 IF=[toDraw]=3
-IMAGE = ,"cardRetro.png", 10%, 35%, 25%, 15%, 0
-IMAGE = ,"cardRetro.png",14%,35%,25%,15%,3
-IMAGE = ,"cardRetro.png", 18%, 35%, 25%, 15%, 5
+IMAGE = ,"cardRetro.png", 65%, 8.2%, 25%, 15%, 0
+IMAGE = ,"cardRetro.png", 69%, 8.2%, 25%, 15%,3
+IMAGE = ,"cardRetro.png", 73%, 8.2%, 25%, 15%, 5
 ENDIF
 
 VISUAL=, 10, 10
 ;Font(size)
 FONT=Impact,40,TBU,[points_color]
 ;Text(size)
-TEXT=[deck_size],[Points],10%,9%,20%,20%
+TEXT=[deck_size],[Points],3.6%,6%,20%,20%
 ;Font(size)
 FONT=Impact,40,T,#000000
 ;Text(size)
-TEXT=[deck_size],[units],23.25%,9%,20%,20%
+TEXT=[deck_size],[units],15.8%,5.7%,20%,20%
 
 ENDVISUAL
 
